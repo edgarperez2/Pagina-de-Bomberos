@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bomberos sin Fronteras</title>
+    <link rel="icon" href="./assets/img/logo-nuevo-bf.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar-custom fixed-top">
+      <div class="container-navbar">
+        <div class="brand">
+          <img src="./assets/img/logo-nuevo-bf.png" alt="Logo" class="logo" />
+          <img src="./assets/img/nombre-bf.png" alt="title" class="title" />
+          <!--<h1 class="title">BOMBEROS SIN FRONTERAS</h1>-->
+        </div>
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="#inicio" class="active">INICIO</a></li>
+            <li><a href="#donaciones">DONACIONES</a></li>
+            <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+            <li><a href="#noticias">NOTICIAS</a></li>
+            <li><a href="#contacto">CONTACTANOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        id="inicio"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/Bg-estacion1.jpg"
+              class="d-block w-100 img-fluid"
+              alt="estacion1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/Bg-estacion2.jpg"
+              class="d-block w-100 img-fluid"
+              alt="estacion2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/Incendio2.jpg"
+              class="d-block w-100 img-fluid"
+              alt="estacion3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECCIÓN DONACIONES -->
+      <section id="donaciones" class="py-5">
+        <div class="container text-center">
+          <h2 class="mb-4">Donaciones</h2>
+          <div class="row justify-content-center g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card donation-card h-100 shadow">
+                <img
+                  src="./assets/img/Herramientas.jpg"
+                  class="card-img-top"
+                  alt="Donación 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Equipo de Rescate</h5>
+                  <p class="card-text">
+                    Apoya con la compra de equipamiento especializado.
+                  </p>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donacion1Modal"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Card 1 -->
+            <div
+              class="modal fade"
+              id="donacion1Modal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Equipo de Rescate</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="./assets/img/Herramientas.jpg"
+                      class="img-fluid rounded mb-3"
+                      alt="Donación 1"
+                    />
+                    <p>
+                      Tu donación permitirá adquirir herramientas y equipos
+                      esenciales para operaciones de rescate en incendios y
+                      desastres naturales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card donation-card h-100 shadow">
+                <img
+                  src="./assets/img/img-camion.jpg"
+                  class="card-img-top"
+                  alt="Donación 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Capacitación</h5>
+                  <p class="card-text">
+                    Apoya programas de formación y entrenamiento.
+                  </p>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donacion2Modal"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Card 2 -->
+            <div
+              class="modal fade"
+              id="donacion2Modal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Capacitación</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="./assets/img/img-camion.jpg"
+                      class="img-fluid rounded mb-3"
+                      alt="Donación 2"
+                    />
+                    <p>
+                      Con tu aporte, más voluntarios podrán recibir capacitación
+                      en primeros auxilios, rescate urbano y control de
+                      incendios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card donation-card h-100 shadow">
+                <img
+                  src="./assets/img/img-donacion.jpg"
+                  class="card-img-top"
+                  alt="Donación 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Misiones Internacionales</h5>
+                  <p class="card-text">
+                    Ayuda a enviar brigadas a emergencias globales.
+                  </p>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donacion3Modal"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal Card 3 -->
+            <div
+              class="modal fade"
+              id="donacion3Modal"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Misiones Internacionales</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="./assets/img/img-donacion.jpg"
+                      class="img-fluid rounded mb-3"
+                      alt="Donación 3"
+                    />
+                    <p>
+                      Tu donación permitirá que equipos de Bomberos sin
+                      Fronteras viajen a países afectados por desastres
+                      naturales para salvar vidas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 NUEVA SECCIÓN SOBRE NOSOTROS -->
+      <section id="sobre-nosotros" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Sobre Nosotros</h2>
+          <p class="text-center">
+            Somos Bomberos sin Fronteras, una organización dedicada a brindar
+            apoyo en emergencias y desastres, comprometidos con salvar vidas y
+            proteger comunidades en cualquier lugar del mundo.
+          </p>
+        </div>
+      </section>
+
+      <!-- 🔹 NUEVA SECCIÓN NOTICIAS (Carrusel) -->
+
+      <section id="noticias" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Noticias</h2>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/Incendio1.jpg"
+                  class="d-block w-100"
+                  alt="Noticia 1"
+                />
+                <div class="carousel-caption">
+                  <h5>Campaña de prevención de incendios</h5>
+                  <p>
+                    Bomberos sin Fronteras inicia una campaña global para educar
+                    sobre la prevención de incendios en comunidades rurales.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/Incendio2.jpg"
+                  class="d-block w-100"
+                  alt="Noticia 2"
+                />
+                <div class="carousel-caption">
+                  <h5>Misiones de ayuda internacional</h5>
+                  <p>
+                    Voluntarios viajaron a apoyar en desastres naturales en
+                    América Latina.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/Incendio3.jpg"
+                  class="d-block w-100"
+                  alt="Noticia 3"
+                />
+                <div class="carousel-caption">
+                  <h5>Entrenamiento de brigadas locales</h5>
+                  <p>
+                    Se realizaron capacitaciones en primeros auxilios y rescate urbano.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔹 NUEVA SECCIÓN CONTACTO -->
+     <section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+
+    <div class="row g-4 align-items-stretch">
+      
+      <!-- Mapa -->
+      <div class="col-12 col-md-6">
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.835382776742!2d-71.64553443975913!3d-35.43410769813613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c77af9c9043b%3A0x3d93d772db54f33b!2sGeoseg%20Extintores!5e0!3m2!1ses-419!2scl!4v1772467738700!5m2!1ses-419!2scl" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-12 col-md-6">
+        <form class="p-4 bg-white rounded shadow h-100 d-flex flex-column justify-content-center">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-danger w-100 mt-2">
+            Enviar
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+ <footer class="footer-copyright mt-5">
+  <div class="container py-3">
+    <div class="row align-items-center g-2">
+      
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <small>
+          © <span id="year"></span> Bomberos sin Fronteras. Todos los derechos reservados.
+        </small>
+      </div>
+
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <a href="#" class="footer-link me-3">Términos</a>
+        <a href="#" class="footer-link">Privacidad</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
