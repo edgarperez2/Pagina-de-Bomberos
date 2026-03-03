@@ -310,3 +310,11 @@ main {
   color: #fff;
   text-decoration: underline;
 }
+
+/* feedback visual suave */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
