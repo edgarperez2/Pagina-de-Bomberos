@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donaciones — Bomberos sin Fronteras</title>
+    <link rel="icon" href="./assets/img/logo-nuevo-bf.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+      <div class="container-navbar">
+        <div class="brand">
+          <img src="./assets/img/logo-nuevo-bf.png" alt="Logo Bomberos sin Fronteras" class="logo" />
+          <img src="./assets/img/nombre-bf.png" alt="Bomberos sin Fronteras" class="title" />
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-container" id="menuContainer">
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#" class="active">DONACIONES</a></li>
+            <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+            <li><a href="contacto.html">CONTÁCTANOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-small">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Equipos que salvan vidas</h1>
+        <p>
+          Estas son las herramientas y uniformes recibidos gracias al apoyo de
+          la comunidad internacional, que permiten a nuestros bomberos enfrentar emergencias.
+        </p>
+      </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section class="impact-section">
+      <div class="container text-center">
+        <h2>Impacto real</h2>
+        <p class="text-secondary mb-4">Más de 500 equipos entregados a cuerpos de bomberos en distintas regiones.</p>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3><span class="counter" data-target="500">0</span>+</h3>
+              <p>Equipos entregados</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3><span class="counter" data-target="120">0</span>+</h3>
+              <p>Bomberos beneficiados</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter-box">
+              <h3><span class="counter" data-target="15">0</span>+</h3>
+              <p>Regiones apoyadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPOS DONADOS -->
+    <section class="donations-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 style="font-size:2rem; font-weight:800; color:#fff;">Equipos entregados</h2>
+          <p style="color:#64748b;">Conoce en detalle cada uno de los equipos que entregamos gracias a tus donaciones</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+
+          <!-- CARD 1 -->
+          <div class="col-md-4">
+            <div class="donation-card2 reveal" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalCasco">
+              <img src="./assets/img/equipos.webp" alt="Casco de bombero" loading="lazy" />
+              <h3>Casco de protección</h3>
+              <p>Diseñado para resistir altas temperaturas y proteger contra impactos.</p>
+              <div class="pb-3">
+                <span class="btn btn-danger btn-sm mt-2">Ver más</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-md-4">
+            <div class="donation-card2 reveal" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalGuantes">
+              <img src="./assets/img/uniformes.jpg" alt="Guantes ignífugos" loading="lazy" />
+              <h3>Guantes ignífugos</h3>
+              <p>Permiten manipular herramientas en condiciones extremas.</p>
+              <div class="pb-3">
+                <span class="btn btn-danger btn-sm mt-2">Ver más</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-md-4">
+            <div class="donation-card2 reveal" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalHerramientas">
+              <img src="./assets/img/herramientas2.jpg" alt="Herramientas de rescate" loading="lazy" />
+              <h3>Herramientas de rescate</h3>
+              <p>Equipos esenciales para operaciones de emergencia y rescate.</p>
+              <div class="pb-3">
+                <span class="btn btn-danger btn-sm mt-2">Ver más</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL 1: CASCO DE PROTECCIÓN -->
+    <div class="modal fade" id="modalCasco" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Casco de protección</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0 d-flex flex-column flex-md-row" style="max-height:80vh;">
+
+            <!-- Imagen lateral -->
+            <div style="flex:0 0 40%; min-height:260px; overflow:hidden;">
+              <img src="./assets/img/equipos.webp"
+                style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+                alt="Casco de protección" loading="lazy" />
+            </div>
+
+            <!-- Contenido scrollable -->
+            <div style="flex:1; overflow-y:auto; padding:28px 28px 16px; background:#0f172a;">
+              <p style="color:#e2e8f0; font-size:1rem; line-height:1.85;">
+                El casco de protección es uno de los equipos más críticos para un bombero. Fabricado con
+                materiales de alta resistencia térmica y estructural, capaz de soportar temperaturas extremas
+                sin comprometer la seguridad del portador.
+              </p>
+              <h5 style="color:#f97316; margin-top:1.4rem; margin-bottom:0.8rem; font-weight:700; letter-spacing:0.3px;">Características principales</h5>
+              <ul style="line-height:2.1; padding-left:1.2rem;">
+                <li>Resistencia térmica hasta <strong>300 °C</strong> de forma continua</li>
+                <li>Visor de policarbonato con protección UV y antivaho</li>
+                <li>Sistema de suspensión interior ajustable</li>
+                <li>Atalaje de cuatro puntos para fijación segura</li>
+                <li>Peso optimizado para reducir fatiga</li>
+                <li>Certificación <strong>EN 443</strong> para cascos de bomberos</li>
+              </ul>
+              <div style="background:rgba(249,115,22,0.12); border-left:4px solid #f97316; padding:14px 18px; border-radius:0 8px 8px 0; margin-top:1.2rem;">
+                <p style="color:#fed7aa; margin:0; font-size:0.93rem; line-height:1.65;">
+                  Hemos entregado <strong style="color:#fff;">más de 200 cascos</strong> a bomberos voluntarios
+                  en distintas regiones de Chile gracias a las donaciones recibidas.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer" style="justify-content:space-between;">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="./contacto.html" class="btn btn-danger">Quiero donar equipos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2: GUANTES IGNÍFUGOS -->
+    <div class="modal fade" id="modalGuantes" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Guantes ignífugos</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0 d-flex flex-column flex-md-row" style="max-height:80vh;">
+
+            <!-- Imagen lateral -->
+            <div style="flex:0 0 40%; min-height:260px; overflow:hidden;">
+              <img src="./assets/img/uniformes.jpg"
+                style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+                alt="Guantes ignífugos" loading="lazy" />
+            </div>
+
+            <!-- Contenido scrollable -->
+            <div style="flex:1; overflow-y:auto; padding:28px 28px 16px; background:#0f172a;">
+              <p style="color:#e2e8f0; font-size:1rem; line-height:1.85;">
+                Los guantes ignífugos son una barrera fundamental entre las manos del bombero y el fuego.
+                Permiten manipular herramientas pesadas y operar en ambientes con humo y calor extremo
+                sin perder destreza ni sensibilidad táctil.
+              </p>
+              <h5 style="color:#f97316; margin-top:1.4rem; margin-bottom:0.8rem; font-weight:700; letter-spacing:0.3px;">Características principales</h5>
+              <ul style="line-height:2.1; padding-left:1.2rem;">
+                <li>Capa exterior de <strong>Nomex®</strong> resistente a la llama</li>
+                <li>Forro interior de lana aluminizada para aislamiento térmico</li>
+                <li>Palma reforzada con cuero tratado para mayor durabilidad</li>
+                <li>Puño largo con cierre velcro anti-brasas</li>
+                <li>Diseño ergonómico que mantiene la movilidad</li>
+                <li>Certificación <strong>EN 659</strong> para guantes de bombero</li>
+              </ul>
+              <div style="background:rgba(249,115,22,0.12); border-left:4px solid #f97316; padding:14px 18px; border-radius:0 8px 8px 0; margin-top:1.2rem;">
+                <p style="color:#fed7aa; margin:0; font-size:0.93rem; line-height:1.65;">
+                  Hemos entregado <strong style="color:#fff;">más de 350 pares de guantes</strong> en los últimos
+                  dos años, llegando a bomberos de comunas rurales y urbanas.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer" style="justify-content:space-between;">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="./contacto.html" class="btn btn-danger">Quiero donar equipos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3: HERRAMIENTAS DE RESCATE -->
+    <div class="modal fade" id="modalHerramientas" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Herramientas de rescate</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0 d-flex flex-column flex-md-row" style="max-height:80vh;">
+
+            <!-- Imagen lateral -->
+            <div style="flex:0 0 40%; min-height:260px; overflow:hidden;">
+              <img src="./assets/img/herramientas2.jpg"
+                style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
+                alt="Herramientas de rescate" loading="lazy" />
+            </div>
+
+            <!-- Contenido scrollable -->
+            <div style="flex:1; overflow-y:auto; padding:28px 28px 16px; background:#0f172a;">
+              <p style="color:#e2e8f0; font-size:1rem; line-height:1.85;">
+                Las herramientas de rescate son la extensión del bombero en el terreno. Desde abrir
+                puertas bloqueadas hasta cortar estructuras metálicas, determinan la capacidad de respuesta
+                ante emergencias complejas donde cada segundo cuenta.
+              </p>
+              <h5 style="color:#f97316; margin-top:1.4rem; margin-bottom:0.8rem; font-weight:700; letter-spacing:0.3px;">Equipos incluidos en los kits</h5>
+              <ul style="line-height:2.1; padding-left:1.2rem;">
+                <li><strong>Hacha multipropósito</strong> — corte y apertura de accesos</li>
+                <li><strong>Palanca de rescate</strong> — extracción de víctimas atrapadas</li>
+                <li><strong>Linterna táctica</strong> — iluminación en espacios con humo</li>
+                <li><strong>Cuerda de seguridad 30 m</strong> — evacuación y descenso</li>
+                <li><strong>Cizalla hidráulica portátil</strong> — corte de metales</li>
+                <li><strong>Kit de primeros auxilios</strong> — atención inmediata</li>
+              </ul>
+              <div style="background:rgba(249,115,22,0.12); border-left:4px solid #f97316; padding:14px 18px; border-radius:0 8px 8px 0; margin-top:1.2rem;">
+                <p style="color:#fed7aa; margin:0; font-size:0.93rem; line-height:1.65;">
+                  Cada kit tiene un valor aproximado de <strong style="color:#fff;">$180.000 CLP</strong>.
+                  Con tu donación podemos equipar a más compañías que hoy operan sin los recursos básicos.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer" style="justify-content:space-between;">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="./contacto.html" class="btn btn-danger">Quiero donar equipos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+      <div class="container text-center">
+        <h2>Historias reales</h2>
+        <p class="subtitle">Bomberos que han recibido apoyo gracias a las donaciones</p>
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="testimonial-card reveal">
+              <img src="./assets/img/bombero1.jpeg" alt="Carla Méndez" loading="lazy" />
+              <p>"Gracias a este equipo pudimos responder a incendios con mayor seguridad."</p>
+              <h4>Carla Méndez</h4>
+              <span>Bombero voluntario — Talca, Chile</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card reveal">
+              <img src="./assets/img/bombero2.jpg" alt="Laura Gómez" loading="lazy" />
+              <p>"El apoyo recibido marcó la diferencia en situaciones críticas."</p>
+              <h4>Laura Gómez</h4>
+              <span>Unidad de rescate — Santiago, Chile</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card reveal">
+              <img src="./assets/img/bombero3.webp" alt="José Ramírez" loading="lazy" />
+              <p>"Ahora contamos con herramientas adecuadas para salvar más vidas."</p>
+              <h4>José Ramírez</h4>
+              <span>Bombero profesional — Concepción, Chile</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-copyright">
+      <div class="container py-2">
+        <div class="row align-items-center g-2">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <small>© <span id="year"></span> Bomberos sin Fronteras. Todos los derechos reservados.</small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="#" class="footer-link me-3" data-bs-toggle="modal" data-bs-target="#modalTerminos">Términos</a>
+            <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL TÉRMINOS -->
+    <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Términos y Condiciones</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>El uso de este sitio web implica la aceptación de los presentes Términos y Condiciones. Bomberos sin Fronteras se reserva el derecho de modificar el contenido del sitio en cualquier momento.</p>
+            <p>La información publicada tiene fines informativos y no constituye asesoramiento legal o profesional. El uso indebido del contenido es responsabilidad exclusiva del usuario.</p>
+            <p>Todo el contenido gráfico y textual es propiedad de Bomberos sin Fronteras, salvo que se indique lo contrario.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL PRIVACIDAD -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Política de Privacidad</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bomberos sin Fronteras respeta la privacidad de los usuarios. Los datos enviados a través del formulario de contacto serán utilizados únicamente para responder a consultas.</p>
+            <p>No compartimos información personal con terceros, salvo obligación legal. Implementamos medidas razonables para proteger los datos proporcionados.</p>
+            <p>Al enviar el formulario, el usuario acepta esta Política de Privacidad.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+      // Scroll reveal
+      const reveals = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('active');
+        });
+      }, { threshold: 0.12 });
+      reveals.forEach(el => revealObserver.observe(el));
+
+      // Contadores animados
+      document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+        const counterObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const speed = target / 120;
+            const update = () => {
+              count += speed;
+              if (count < target) {
+                counter.innerText = Math.floor(count);
+                requestAnimationFrame(update);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            update();
+            counterObserver.unobserve(counter);
+          });
+        }, { threshold: 0.5 });
+        counters.forEach(c => counterObserver.observe(c));
+      });
+    </script>
+
+  </body>
+</html>
