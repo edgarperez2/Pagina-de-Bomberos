@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería — Bomberos sin Fronteras</title>
+    <link rel="icon" href="./assets/img/logo-bsf-nuevo.png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+      <div class="container-navbar">
+        <div class="brand">
+          <img src="./assets/img/logo-bsf-nuevo.png" alt="Logo Bomberos sin Fronteras Chile" class="logo" />
+          <div class="brand-name">
+            <span class="line1">Bomberos sin Fronteras</span>
+            <span class="line2">Chile</span>
+          </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-container" id="menuContainer">
+          <ul class="menu">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="donaciones.html">DONACIONES</a></li>
+            <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+            <li><a href="#" class="active">GALERÍA</a></li>
+            <li><a href="contacto.html">CONTÁCTANOS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-small">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Galería</h1>
+        <p>Momentos, misiones y equipamiento que marcan la diferencia</p>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery-section">
+      <div class="container">
+
+        <!-- Título -->
+        <div class="text-center mb-2">
+          <h2 style="font-size:2rem; font-weight:800; color:#fff;">Nuestro trabajo en imágenes</h2>
+          <p style="color:#64748b; margin-bottom:36px;">Cada foto refleja el compromiso de Bomberos sin Fronteras con las comunidades de Chile</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="misiones">Misiones</button>
+          <button class="filter-btn" data-filter="incendios">Incendios</button>
+          <button class="filter-btn" data-filter="equipamiento">Equipamiento</button>
+          <button class="filter-btn" data-filter="instalaciones">Instalaciones</button>
+        </div>
+
+        <!-- Tarjetas -->
+        <div class="row g-4" id="galleryGrid">
+
+          <!-- MISIONES -->
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="misiones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/noticia1.jpg"
+              data-title="Entrega de equipos en Talca"
+              data-desc="Misión en la Región del Maule. Entregamos cascos, guantes y botiquines a la compañía local de bomberos voluntarios de Talca. Marzo 2026.">
+              <span class="gallery-badge">Misión</span>
+              <img src="./assets/img/noticia1.jpg" alt="Entrega de equipos en Talca" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Entrega de equipos en Talca</h5>
+                <p>Región del Maule — Marzo 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="misiones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/noticia2.jpg"
+              data-title="Misión Santiago — Región Metropolitana"
+              data-desc="Cinco compañías de distintas comunas de Santiago recibieron equipos de respiración autónoma y trajes de proximidad al fuego. Abril 2026.">
+              <span class="gallery-badge">Misión</span>
+              <img src="./assets/img/noticia2.jpg" alt="Misión Santiago" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Misión Santiago</h5>
+                <p>Región Metropolitana — Abril 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="misiones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/noticia3.jpg"
+              data-title="Misión Concepción — Biobío"
+              data-desc="Reforzamos a brigadas forestales del Biobío con cascos térmicos, linternas tácticas y chalecos de visibilidad. Mayo 2026.">
+              <span class="gallery-badge">Misión</span>
+              <img src="./assets/img/noticia3.jpg" alt="Misión Concepción" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Misión Concepción</h5>
+                <p>Región del Biobío — Mayo 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="misiones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Taller-donacion.jpg"
+              data-title="Taller de capacitación"
+              data-desc="Jornada de formación para bomberos voluntarios beneficiados. Los instructores enseñaron uso correcto del equipamiento donado y técnicas de rescate en incendios forestales.">
+              <span class="gallery-badge">Misión</span>
+              <img src="./assets/img/Taller-donacion.jpg" alt="Taller de capacitación" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Taller de capacitación</h5>
+                <p>Formación y uso de equipos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- INCENDIOS -->
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="incendios">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Incendio1.jpg"
+              data-title="Incendio forestal — Región del Maule"
+              data-desc="Combate de incendio forestal en zonas rurales del Maule. Nuestros equipos donados permitieron a las brigadas locales actuar con mayor seguridad y efectividad.">
+              <span class="gallery-badge" style="background:#b45309;">Incendio</span>
+              <img src="./assets/img/Incendio1.jpg" alt="Incendio forestal Maule" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Incendio forestal — Maule</h5>
+                <p>Zona rural en emergencia activa</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="incendios">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Incendio2.jpg"
+              data-title="Emergencia urbana — Santiago"
+              data-desc="Intervención en incendio de alta complejidad en zona urbana de Santiago. Los equipos de respiración autónoma donados fueron fundamentales en esta operación.">
+              <span class="gallery-badge" style="background:#b45309;">Incendio</span>
+              <img src="./assets/img/Incendio2.jpg" alt="Emergencia urbana Santiago" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Emergencia urbana — Santiago</h5>
+                <p>Incendio de alta complejidad</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="incendios">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Incendio3.jpg"
+              data-title="Incendio forestal — Biobío"
+              data-desc="Temporada crítica en la Región del Biobío. Las brigadas locales enfrentan cada verano incendios de gran magnitud. El equipamiento donado marca la diferencia en la primera respuesta.">
+              <span class="gallery-badge" style="background:#b45309;">Incendio</span>
+              <img src="./assets/img/Incendio3.jpg" alt="Incendio forestal Biobío" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Incendio forestal — Biobío</h5>
+                <p>Temporada crítica de verano</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EQUIPAMIENTO -->
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="equipamiento">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/equipos.webp"
+              data-title="Cascos de protección"
+              data-desc="Cascos certificados EN 443 con visor térmico y sistema de suspensión ajustable. Resistentes hasta 300°C. Más de 200 unidades entregadas a bomberos voluntarios en distintas regiones.">
+              <span class="gallery-badge" style="background:#0f766e;">Equipos</span>
+              <img src="./assets/img/equipos.webp" alt="Cascos de protección" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Cascos de protección</h5>
+                <p>+200 unidades entregadas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="equipamiento">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/uniformes.jpg"
+              data-title="Uniformes y guantes ignífugos"
+              data-desc="Guantes certificados EN 659 con capa de Nomex® y forro aluminizado. Uniformes de intervención con alta visibilidad para operaciones nocturnas. +350 pares entregados.">
+              <span class="gallery-badge" style="background:#0f766e;">Equipos</span>
+              <img src="./assets/img/uniformes.jpg" alt="Uniformes y guantes" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Uniformes y guantes</h5>
+                <p>+350 pares entregados</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="equipamiento">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/herramientas2.jpg"
+              data-title="Kits de herramientas de rescate"
+              data-desc="Kits completos con hacha multipropósito, palanca de rescate, linterna táctica, cuerda de 30m, cizalla hidráulica portátil y kit de primeros auxilios. Valorados en $180.000 CLP c/u.">
+              <span class="gallery-badge" style="background:#0f766e;">Equipos</span>
+              <img src="./assets/img/herramientas2.jpg" alt="Herramientas de rescate" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Herramientas de rescate</h5>
+                <p>Kits completos por compañía</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSTALACIONES -->
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="instalaciones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Bg-estacion1.jpg"
+              data-title="Estación de bomberos — Maule"
+              data-desc="Una de las estaciones beneficiadas en la Región del Maule. Gracias a las donaciones, cuentan ahora con equipamiento moderno para responder a emergencias con mayor seguridad.">
+              <span class="gallery-badge" style="background:#1d4ed8;">Instalación</span>
+              <img src="./assets/img/Bg-estacion1.jpg" alt="Estación de bomberos Maule" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Estación — Región del Maule</h5>
+                <p>Instalaciones modernizadas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="instalaciones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/Bg-estacion2.jpg"
+              data-title="Estación de bomberos — Biobío"
+              data-desc="Segunda estación apoyada en la Región del Biobío. Esta compañía atiende comunas rurales con alta exposición a incendios forestales durante la temporada estival.">
+              <span class="gallery-badge" style="background:#1d4ed8;">Instalación</span>
+              <img src="./assets/img/Bg-estacion2.jpg" alt="Estación de bomberos Biobío" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Estación — Región del Biobío</h5>
+                <p>Zona de alta exposición forestal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="instalaciones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/nosotros1.jpg"
+              data-title="Equipo Bomberos sin Fronteras"
+              data-desc="Parte del equipo de Bomberos sin Fronteras durante una jornada de coordinación logística previa a la entrega de equipos. Un grupo comprometido con apoyar a quienes protegen Chile.">
+              <span class="gallery-badge" style="background:#1d4ed8;">Instalación</span>
+              <img src="./assets/img/nosotros1.jpg" alt="Equipo BSF" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Equipo Bomberos sin Fronteras</h5>
+                <p>Coordinación logística</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 gallery-item" data-category="instalaciones">
+            <div class="gallery-card reveal" data-bs-toggle="modal" data-bs-target="#modalGaleria"
+              data-img="./assets/img/nosotros3.jpg"
+              data-title="Voluntarios en acción"
+              data-desc="Voluntarios de Bomberos sin Fronteras durante el proceso de clasificación y preparación de equipos para las próximas entregas. Cada detalle importa cuando se trata de salvar vidas.">
+              <span class="gallery-badge" style="background:#1d4ed8;">Instalación</span>
+              <img src="./assets/img/nosotros3.jpg" alt="Voluntarios BSF" loading="lazy" />
+              <div class="gallery-overlay">
+                <h5>Voluntarios en acción</h5>
+                <p>Preparación de equipos</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /row -->
+      </div>
+    </section>
+
+    <!-- MODAL LIGHTBOX -->
+    <div class="modal fade" id="modalGaleria" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalGaleriaTitle">Foto</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0 d-flex flex-column flex-md-row" style="max-height:82vh;">
+            <!-- Imagen -->
+            <div style="flex:0 0 60%; min-height:300px; overflow:hidden; background:#000;">
+              <img id="modalGaleriaImg" src="" alt=""
+                style="width:100%; height:100%; object-fit:contain; display:block;" loading="lazy" />
+            </div>
+            <!-- Descripción -->
+            <div style="flex:1; overflow-y:auto; padding:32px 28px; background:#0f172a;">
+              <p id="modalGaleriaDesc" style="color:#e2e8f0; font-size:1rem; line-height:1.85;"></p>
+            </div>
+          </div>
+          <div class="modal-footer" style="justify-content:space-between;">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="./donaciones.html" class="btn btn-danger">Apoyar la causa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>¿Quieres ser parte de esto?</h2>
+        <a href="./donaciones.html" class="btn btn-danger btn-lg me-3">Ver donaciones</a>
+        <a href="./contacto.html" class="btn btn-outline-light btn-lg">Contáctanos</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-copyright">
+      <div class="container py-2">
+        <div class="row align-items-center g-2">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <small>© <span id="year"></span> Bomberos sin Fronteras. Todos los derechos reservados.</small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="#" class="footer-link me-3" data-bs-toggle="modal" data-bs-target="#modalTerminos">Términos</a>
+            <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL TÉRMINOS -->
+    <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Términos y Condiciones</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>El uso de este sitio web implica la aceptación de los presentes Términos y Condiciones. Bomberos sin Fronteras se reserva el derecho de modificar el contenido del sitio en cualquier momento.</p>
+            <p>La información publicada tiene fines informativos y no constituye asesoramiento legal o profesional. El uso indebido del contenido es responsabilidad exclusiva del usuario.</p>
+            <p>Todo el contenido gráfico y textual es propiedad de Bomberos sin Fronteras, salvo que se indique lo contrario.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL PRIVACIDAD -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Política de Privacidad</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Bomberos sin Fronteras respeta la privacidad de los usuarios. Los datos enviados a través del formulario de contacto serán utilizados únicamente para responder a consultas.</p>
+            <p>No compartimos información personal con terceros, salvo obligación legal. Implementamos medidas razonables para proteger los datos proporcionados.</p>
+            <p>Al enviar el formulario, el usuario acepta esta Política de Privacidad.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+      // Scroll reveal
+      (() => {
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => obs.observe(el));
+      })();
+
+      // Filtros de galería
+      (() => {
+        const btns  = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.gallery-item');
+
+        btns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            btns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+            items.forEach(item => {
+              const match = filter === 'all' || item.dataset.category === filter;
+              item.style.display = match ? '' : 'none';
+            });
+          });
+        });
+      })();
+
+      // Lightbox: inyectar datos en modal
+      (() => {
+        const modalEl  = document.getElementById('modalGaleria');
+        const modalImg = document.getElementById('modalGaleriaImg');
+        const modalTit = document.getElementById('modalGaleriaTitle');
+        const modalDsc = document.getElementById('modalGaleriaDesc');
+
+        modalEl.addEventListener('show.bs.modal', (e) => {
+          const card = e.relatedTarget;
+          modalImg.src   = card.dataset.img   || '';
+          modalImg.alt   = card.dataset.title || '';
+          modalTit.textContent = card.dataset.title || '';
+          modalDsc.textContent = card.dataset.desc  || '';
+        });
+
+        modalEl.addEventListener('hidden.bs.modal', () => {
+          modalImg.src = '';
+        });
+      })();
+    </script>
+
+  </body>
+</html>
