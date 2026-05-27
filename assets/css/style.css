@@ -1390,6 +1390,122 @@ label {
 }
 
 /* ==============================
+   REDES SOCIALES — BARRA FLOTANTE
+============================== */
+.social-float {
+  position: fixed;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-float-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-float-link:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+  transform: translateX(5px) scale(1.12);
+  box-shadow: 0 4px 18px rgba(220, 38, 38, 0.45);
+}
+
+.social-float-link svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .social-float { display: none; }
+}
+
+/* ==============================
+   REDES SOCIALES — FOOTER
+============================== */
+.social-icon-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #64748b;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-icon-sm:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+}
+
+.social-icon-sm svg {
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+/* ==============================
+   REDES SOCIALES — CONTACTO
+============================== */
+.social-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.87rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.social-contact-link:hover {
+  background: rgba(220, 38, 38, 0.12);
+  border-color: rgba(220, 38, 38, 0.45);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.social-contact-link svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* ==============================
    VALIDACIÓN DE FORMULARIOS
 ============================== */
 .was-validated .form-control:invalid {
